@@ -12,39 +12,56 @@
     />
     <title>Blogr landing Page Main</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline font-overpass">Hello world!</h1>
-    <!-- <header class="header">
-      <nav class="container">
-        <div>
-          <img src="/public/images/logo.svg" alt="" class="logo" />
-        </div>
-        <ul class="header__navigation-left">
-          <li class="header__link">
-            <a>product</a>
+  <body class="font-overpass">
+    <!-- header section -->
+    <header
+      class="absolute inset-x-0 container mx-auto py-12 px-5 capitalize text-neutralWhiteText font-semibold w-full md:px-16"
+    >
+      <nav class="flex items-center">
+        <img class="mr-14" src="/public/images/logo.svg" alt="logo" />
+
+        <ul class="hidden flex-1 space-x-7 md:flex">
+          <li>
+            <a href="">product</a>
           </li>
-          <li class="header__link">
-            <a>company</a>
-          </li>
-          <li class="header__link">
-            <a>connect</a>
-          </li>
+          <li><a href="">company</a></li>
+          <li><a href="">connect</a></li>
         </ul>
 
-        <ul class="header__navigation-right">
-          <li class="header__link">
-            <a>login</a>
-          </li>
-          <li class="header__link">
-            <button>sign up</button>
-          </li>
+        <ul class="hidden space-x-7 md:flex">
+          <li><a href="">login</a></li>
+          <li><a class="" href="">sign up</a></li>
         </ul>
       </nav>
-    </header> -->
+    </header>
+
+    <!-- hero section -->
+
+    <section
+      class="bg-gradient-to-r from-gradientVeryLightRed to-gradientLightRed rounded-bl-[8rem]"
+    >
+      <div
+        class="container pt-60 pb-36 mx-auto text-center text-neutralWhiteText"
+      >
+        <h1 class="text-6xl font-bold">A modern publishing platform</h1>
+        <p class="mt-8 mb-14 text-lg">
+          Grow your audience and build your online brand
+        </p>
+        <a
+          class="rounded-3xl font-bold mr-2 bg-neutralWhiteText px-6 py-3 border-2 text-primarylightRed"
+          href=""
+          >Start for Free</a
+        >
+        <a
+          class="border-2 ml-2 border-neutralWhiteText px-6 py-3 rounded-3xl font-bold"
+          href=""
+          >Learn More</a
+        >
+      </div>
+    </section>
+
     <!-- Product Overview Pricing Marketplace Features Integrations Company About
-    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up A modern
-    publishing platform Grow your audience and build your online brand Start for
-    Free Learn More Designed for the future Introducing an extensible editor
+    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up   Learn More Designed for the future Introducing an extensible editor
     Blogr features an exceedingly intuitive interface which lets you focus on
     one thing: creating content. The editor supports management of multiple
     blogs and allows easy manipulation of embeds such as images, videos, and
