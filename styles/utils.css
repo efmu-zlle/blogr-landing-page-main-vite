@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#features {
+  background-image: url('/public/images/bg-pattern-circles.svg');
+  background-position: center 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}

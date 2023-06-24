@@ -15,7 +15,7 @@
   <body class="font-overpass">
     <!-- header section -->
     <header
-      class="absolute inset-x-0 container mx-auto py-12 px-5 capitalize text-neutralWhiteText font-semibold w-full md:px-16"
+      class="absolute inset-x-0 container mx-auto py-12 px-5 capitalize text-whiteText font-semibold w-full md:px-16"
     >
       <nav class="flex items-center">
         <img class="mr-14" src="/public/images/logo.svg" alt="logo" />
@@ -29,51 +29,121 @@
         </ul>
 
         <ul class="hidden space-x-7 md:flex">
-          <li><a href="">login</a></li>
-          <li><a class="" href="">sign up</a></li>
+          <li>
+            <a href="">login</a>
+          </li>
+          <li>
+            <a
+              class="rounded-3xl font-extrabold mr-2 bg-whiteText px-6 py-3 border-2 text-lightRed transition-all duration-300 hover:bg-veryLightRed hover:border-veryLightRed hover:text-whiteText"
+              href=""
+              >sign up
+            </a>
+          </li>
         </ul>
       </nav>
+
+      <div
+        class="flex justify-center items-center flex-col w-[30px] h-[20px] md:hidden"
+      >
+        <span class="w-full h-[2px] bg-whiteText"></span>
+        <span class="w-full h-[2px] bg-whiteText my-1"></span>
+        <span class="w-full h-[2px] bg-whiteText"></span>
+      </div>
     </header>
 
     <!-- hero section -->
-
     <section
-      class="bg-gradient-to-r from-gradientVeryLightRed to-gradientLightRed rounded-bl-[8rem]"
+      class="bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient rounded-bl-[8rem]"
     >
-      <div
-        class="container pt-60 pb-36 mx-auto text-center text-neutralWhiteText"
-      >
+      <div class="container pt-60 pb-36 mx-auto text-center text-whiteText">
         <h1 class="text-6xl font-bold">A modern publishing platform</h1>
         <p class="mt-8 mb-14 text-lg">
           Grow your audience and build your online brand
         </p>
         <a
-          class="rounded-3xl font-bold mr-2 bg-neutralWhiteText px-6 py-3 border-2 text-primarylightRed"
+          class="rounded-3xl font-extrabold mr-2 bg-whiteText px-6 py-3 border-2 text-lightRed transition-all duration-300 hover:bg-veryLightRed hover:border-veryLightRed hover:text-whiteText"
           href=""
           >Start for Free</a
         >
         <a
-          class="border-2 ml-2 border-neutralWhiteText px-6 py-3 rounded-3xl font-bold"
+          class="border-2 ml-2 border-whiteText px-6 py-3 rounded-3xl font-bold transition-all duration-300 hover:bg-whiteText hover:text-veryLightRed"
           href=""
           >Learn More</a
         >
       </div>
     </section>
 
+    <!-- features section -->
+    <section
+      class="container mx-auto px-8 text-veryDarkDesaturatedBlue md:px-16"
+    >
+      <h3 class="text-3xl text-center mt-40 font-bold">
+        Designed for the future
+      </h3>
+      <div class="flex flex-col-reverse mt-10 md:flex-row md:overflow-hidden">
+        <div class="flex flex-col mt-10 flex-1 text-center md:text-left">
+          <div>
+            <h5 class="font-bold text-lg">Introducing an extensible editor</h5>
+            <p class="text-sm mt-6 mb-10">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold text-lg">Robust content management</h5>
+            <p class="text-sm mt-6 mb-10">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you&apos;re in full control.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-1 self-center">
+          <img
+            class="md:hidden"
+            src="/public/images/illustration-editor-mobile.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- features second section  -->
+
+    <section
+      class="bg-gradient-to-r from-veryDarkBlackBlue to-veryDarkDesaturatedBlue text-whiteText rounded-bl-[6rem] rounded-tr-[6rem] md:mt-64 md:mb-64"
+    >
+      <div class="container mx-auto px-8 flex flex-col md:px-16 md:flex-row">
+        <div id="features" class="flex-1">
+          <!-- <img class="" src="/public/images/illustration-phones.svg" alt="" /> -->
+        </div>
+        <div class="flex-1">
+          <h5 class="text-3xl font-bold mt-48 md:mt-28">
+            State of the Art Infrastructure
+          </h5>
+          <p class="text-sm mb-24 md:mb-28">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Product Overview Pricing Marketplace Features Integrations Company About
-    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up   Learn More Designed for the future Introducing an extensible editor
-    Blogr features an exceedingly intuitive interface which lets you focus on
-    one thing: creating content. The editor supports management of multiple
-    blogs and allows easy manipulation of embeds such as images, videos, and
-    Markdown. Extensibility with plugins and themes provide easy ways to add
-    functionality or change the looks of a blog. Robust content management
-    Flexible content management enables users to easily move through posts.
-    Increase the usability of your blog by adding customized categories,
-    sections, format, or flow. With this functionality, you&apos;re in full
-    control. State of the Art Infrastructure With reliability and speed in mind,
-    worldwide data centers provide the backbone for ultra-fast connectivity.
-    This ensures your site will load instantly, no matter where your readers
-    are, keeping your site competitive. Free, open, simple Blogr is a free and
+    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up   
+    
+    
+    
+     
+    Free, open, simple Blogr is a free and
     open source application backed by a large community of helpful developers.
     It supports features such as code syntax highlighting, RSS feeds, social
     media integration, third-party commenting tools, and works seamlessly with
