@@ -24,7 +24,7 @@
   left: 0%;
   height: 100%;
   width: 100%;
-  background-image: url(/public/images/bg-pattern-circles.svg);
+  background-image: url('/public/images/bg-pattern-circles.svg');
   background-repeat: no-repeat;
   background-position: center -123%;
   background-size: 100%;
@@ -43,10 +43,10 @@
   height: 100%;
   width: 100%;
   background-image: url('/public/images/illustration-phones.svg');
-  /* transform: scale(1.4);
+  transform: scale(1.4);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center; */
+  background-position: center center;
 }
 
 /* md mobile-first */
@@ -71,17 +71,9 @@
   }
 
   #circles::before {
-    content: '';
-    position: absolute;
-    top: 0;
     left: -30%;
-    height: 100%;
-    width: 100%;
-    background-image: url(/public/images/bg-pattern-circles.svg);
-    background-repeat: no-repeat;
     background-position: center 78%;
     background-size: 75%;
-    z-index: -1;
   }
 }
 
@@ -107,20 +99,6 @@
     transform: scale(1.8);
     z-index: 100;
   }
-
-  #phones::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(/public/images/illustration-phones.svg);
-    transform: scale(1.4);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 }
 
 /* md desktop-first */
@@ -130,4 +108,15 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.animate.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.9s ease-out;
 }
