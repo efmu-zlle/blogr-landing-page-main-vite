@@ -21,35 +21,26 @@ function animation() {
 
 window.addEventListener('DOMContentLoaded', animation);
 
-const modals = [...document.querySelectorAll('#modal')];
-const icons = [...document.querySelectorAll('#icon')];
+const links = [...document.querySelectorAll('#link')];
 
-icons.forEach((btnIcon, index) =>
-  btnIcon.addEventListener('click', () => {
-    modals.forEach((modal) => {
-      if (modal !== modals[index]) {
-        modal.dataset.link = 'false';
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    links.forEach((item) => {
+      if (item !== link) {
+        item.dataset.link = 'false';
       }
     });
 
-    icons.forEach((item) => {
-      if (item !== btnIcon) {
-        item.dataset.icon = 'false';
-      }
-    });
-
-    modals[index].dataset.link = 'true';
-    btnIcon.dataset.icon = 'true';
-  })
-);
+    e.currentTarget.dataset.link = 'true';
+  });
+});
 
 document.addEventListener('click', (e) => {
-  if (e.target.id == 'icon') return;
-  if (e.target.id == 'modal') return;
-  if (e.target.parentElement.id == 'modal') return;
+  if (typeof e.target.parentElement.dataset.link === 'string') return;
+  if (typeof e.target.parentElement.parentElement.dataset.link === 'string')
+    return;
 
-  icons.forEach((btnIcon, index) => {
-    modals[index].dataset.link = 'false';
-    btnIcon.dataset.icon = 'false';
+  links.forEach((item) => {
+    item.dataset.link = 'false';
   });
 });
